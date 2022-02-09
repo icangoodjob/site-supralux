@@ -1,0 +1,66 @@
+.breadcrumbs {
+}
+
+.breadcrumbs__list {
+	padding: 15px 20px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	background: $grayColorLight;
+}
+.breadcrumbs__item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0 0 0 13px;
+	font-size: 13px;
+	line-height: math.div(20, 13) * 100%;
+	font-weight: 500;
+	color: $grayDarkColor;
+	&::before{
+		content: "/";
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 13px;
+		line-height: math.div(20, 13) * 100%;
+		color: $grayDarkColor;
+	}
+	&:not(:last-child){
+		margin: 0 10px 0 0px;
+	}
+	&:first-child::before{
+		content: none;
+	}
+	&:first-child{
+		padding: 0;
+	}
+}
+.breadcrumbs__link {
+	&::before{
+		font-size: 17px;
+		color: $mainColor;
+	}
+}
+
+.breadcrumbs__delete {
+	width: 10px;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin: 0 0 0 5px;
+	&::before{
+		color: $redColor;
+		margin: 0 0 0 3px;
+	}
+}
+
+/* ================= 767px ==========================*/
+@media screen and (max-width: $md){
+	// BREADCRUMBS
+	.breadcrumbs{
+		display: none;
+	}
+}
