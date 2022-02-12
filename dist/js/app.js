@@ -522,13 +522,16 @@ var profileBody = document.querySelector('.profile__body');
 var nullBlock = document.querySelector('.null-block');
 console.log(profileBody);
 
-if (profileBody != null) {
-  nullBlock.style.display = 'none';
-} else {
-  nullBlock.style.display = 'block';
-}
+if (profileBody) {
+  if (profileBody != null) {
+    nullBlock.style.display = 'none';
+  } else {
+    nullBlock.style.display = 'block';
+  }
 
-; // Filter input
+  ;
+} // Filter input
+
 
 var filter = function filter() {
   var input = document.getElementById('filter-input'),

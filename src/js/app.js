@@ -474,12 +474,13 @@ const profileBody = document.querySelector('.profile__body');
 const nullBlock = document.querySelector('.null-block');
 console.log(profileBody);
 
-if (profileBody != null){
-	nullBlock.style.display = 'none';
-} else {
-	nullBlock.style.display = 'block';
-};
-
+if (profileBody){
+	if (profileBody != null){
+		nullBlock.style.display = 'none';
+	} else {
+		nullBlock.style.display = 'block';
+	};
+}
 
 // Filter input
 let filter = function () {
