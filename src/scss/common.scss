@@ -50,7 +50,7 @@ section{
 		}
 	}
 }
-/* ================= 576px ==========================*/
+
 @media screen and (max-width: $sm){
 	.read-btn{
 		min-height: 50px;
@@ -78,6 +78,16 @@ section{
 		object-fit: cover;
 	}
 }
+
+/* Знак рубля */
+._rub {
+	position: relative;
+	&::before{
+		content: "₽";
+		position: absolute;
+	}
+}
+
 
 /* Убираем стрелки у input[type="number"] */
 // для браузера Chrome
@@ -177,7 +187,6 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 }
 
-/* ================= 767 ==========================*/
 @media screen and (max-width: $md) {
 	// PAGINATION
 	.pagination {

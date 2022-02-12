@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Избранное"
+})
+<body>
+
+	<div class="wrapper profile-wrapper">
+
+		@@include('html/header.html',{})
+
+		<main class="main">
+			<section class="null-block">
+				<div class="container">
+					<div class="heading-block">
+						<h2 class="heading-block__title">Избранное</h2>
+					</div>
+					<div class="null-block__box">
+						<div class="null-block__info">
+							Список избранного пуст
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>

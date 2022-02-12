@@ -57,7 +57,13 @@
 	}
 }
 
-/* ================= 767px ==========================*/
+@media screen and (max-width: $lg){
+	// BREADCRUMBS
+	.breadcrumbs{
+		margin: 10px 0 0;
+	}
+}
+
 @media screen and (max-width: $md){
 	// BREADCRUMBS
 	.breadcrumbs{

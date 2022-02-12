@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Личные данные"
+})
+<body>
+
+	<div class="wrapper profile-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Профиль
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main profile-page">
+			<section class="profile">
+				<div class="container">
+					<div class="profile__body">
+						<aside class="profile__aside aside-profile">
+							<h2 class="aside-profile__title">Личный кабинет</h2>
+							<ul class="aside-profile__list">
+								<li><a href="" class="aside-profile__link current _icon-arrow-right">Профиль</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Заказы</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Избранное</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Изменить пароль</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Выйти</a></li>
+							</ul>
+						</aside>
+						<div class="profile__data data-profile">
+							<div class="profile__heading-block heading-block">
+								<h2 class="heading-block__title">Профиль</h2>
+							</div>
+							<div class="data-profile__body border-block">
+								<form action="" class="data-profile__form form">
+									<div class="form__items">
+										<div class="form__item">
+											<label class="form__label">E-mail<span>*</span></label>
+											<input class="form__input" type="text" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">ФИО</label>
+											<input class="form__input" type="text" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Телефон</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Доп. телефон</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Адрес</label>
+											<input class="form__input" type="text" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Название</label>
+											<input class="form__input" type="text" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Юр. адрес</label>
+											<input class="form__input" type="text" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">ИНН</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">КПП</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">БИК</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+										<div class="form__item">
+											<label class="form__label">Р/С</label>
+											<input class="form__input" type="number" autocomplete="off">
+										</div>
+									</div>
+									<button class="form__button" type="submit">Сохранить</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>

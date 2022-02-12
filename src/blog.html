@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Блог"
+})
+<body>
+
+	<div class="wrapper blog-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Блог
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main blog-page">
+			<section class="blog">
+				<div class="blog__container">
+					<div class="blog__body">
+						<div class="blog__content">
+							<div class="blog__items">
+								<div class="blog__item item-blog">
+									<div class="item-blog__image ibg">
+										<img src="img/blog/3.jpg" alt="">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__date">
+											<span class="item-blog__number">19</span>
+											<span class="item-blog__month">мая</span>
+										</div>
+										<div class="item-blog__content">
+											<h2 class="item-blog__title">
+												<a href="#">Понятие F-stop в фотографии</a>
+											</h2>
+											<div class="item-blog__text">
+												<p>Один из основных терминов в фотографии - понятие «F-stop», «F-стоп», или «F-число». Понимание этой характеристики объектива является ключом к достижению правильной экспозиции и получения красивых снимков</p>
+											</div>
+											<div class="item-blog__data data-blog">
+												<div class="data-blog__label data-blog__label_calendar">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"/></svg>
+													19 мая 2021 г.
+												</div>
+												<div class="data-blog__label data-blog__label_user">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
+													Админ
+												</div>
+												<a href="#" class="data-blog__link">Подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="blog__item item-blog">
+									<div class="item-blog__image ibg">
+										<img src="img/blog/1.jpg" alt="">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__date">
+											<span class="item-blog__number">30</span>
+											<span class="item-blog__month">дек.</span>
+										</div>
+										<div class="item-blog__content">
+											<h2 class="item-blog__title">
+												<a href="#">Как фотографировать новогодние огни (настройки и советы)</a>
+											</h2>
+											<div class="item-blog__text">
+												<p>В этой статье мы вам расскажем, как фотографировать рождественские огни, в том числе гирлянды, так, чтобы эта съемка не превратилась в проблему. Вы будете использовать рассеянный свет и аккуратно размещенную вспышку...</p>
+											</div>
+											<div class="item-blog__data data-blog">
+												<div class="data-blog__label data-blog__label_calendar">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"/></svg>
+													30 декабря 2021 г.
+												</div>
+												<div class="data-blog__label data-blog__label_user">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
+													Админ
+												</div>
+												<a href="#" class="data-blog__link">Подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="blog__item item-blog">
+									<div class="item-blog__image ibg">
+										<img src="img/blog/2.jpg" alt="">
+									</div>
+									<div class="item-blog__body">
+										<div class="item-blog__date">
+											<span class="item-blog__number">30</span>
+											<span class="item-blog__month">дек.</span>
+										</div>
+										<div class="item-blog__content">
+											<h2 class="item-blog__title">
+												<a href="#">Подсказки для успеха в стоковой фотографии. Планирование и исследование</a>
+											</h2>
+											<div class="item-blog__text">
+												<p>Ни для кого не секрет, что многие фотографы остались без работы в 2020 году. Но нужно понимать, что всегда есть надежда, и завтрашний день может принести новые возможности. Фотографам на помощь приходит стоковая фотография. В этом материале собраны советы, которые помогут вам максимально увеличить...</p>
+											</div>
+											<div class="item-blog__data data-blog">
+												<div class="data-blog__label data-blog__label_calendar">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"/></svg>
+													30 декабря 2021 г.
+												</div>
+												<div class="data-blog__label data-blog__label_user">
+													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg>
+													Админ
+												</div>
+												<a href="#" class="data-blog__link">Подробнее</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="pagination">
+									<button class="pagination-button pagination-button__prev _icon-slider-arrow_left">
+										<span>Назад</span>
+									</button>
+									<ul class="pagination__list">
+										<li class="pagination__item"><a href="" class="pagination__link">1</a></li>
+										<li class="pagination__item"><a href="" class="pagination__link pagination__link_current">2</a></li>
+										<li class="pagination__item"><a href="" class="pagination__link">...</a></li>
+										<li class="pagination__item"><a href="" class="pagination__link">15</a></li>
+										<li class="pagination__item"><a href="" class="pagination__link">16</a></li>
+									</ul>
+									<button class="pagination-button  pagination-button__next _icon-slider-arrow_right">
+										<span>Вперед</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<aside class="blog__aside aside-blog">
+							<div class="aside-blog__category">
+								<h2 class="aside-blog__title">Информация</h2>
+								<ul class="aside-blog__list">
+									<li><a href="" class="aside-blog__link _icon-arrow-right">О компании</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Условия оплаты</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Гарантия и сервис</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Информация для юридических лиц</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Как узнать стоимость доставки</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Как сделать заказ</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Обмен и возврат</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Часто задаваемые вопросы</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Акции и новости</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Блог</a></li>
+								</ul>
+							</div>
+							<div class="aside-blog__category">
+								<h2 class="aside-blog__title">Доставка и оплата</h2>
+								<ul class="aside-blog__list">
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Как узнать стоимость доставки</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Доставка и оплата</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Доставка по Москве</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Информация для юридических лиц</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Доставка по России</a></li>
+									<li><a href="" class="aside-blog__link _icon-arrow-right">Условия оплаты</a></li>
+								</ul>
+							</div>
+							<div class="aside-blog__category blog-news">
+								<h2 class="aside-blog__title">Последние посты</h2>
+								<div class="blog-news__item">
+									<div class="blog-news__image">
+										<img src="img/blog/blog-news-1.jpg" alt="">
+									</div>
+									<div class="blog-news__info">
+										<span class="blog-news__text">
+											Phottix: хиты снова в наличии
+										</span>
+										<span class="blog-news__date">
+											26 января 2022 г.
+										</span>
+									</div>
+								</div>
+								<div class="blog-news__item">
+									<div class="blog-news__image">
+										<img src="img/blog/blog-news-1.jpg" alt="">
+									</div>
+									<div class="blog-news__info">
+										<span class="blog-news__text">
+											График работы магазина в новогодние дни
+										</span>
+										<span class="blog-news__date">
+											24 декабря 2021 г.
+										</span>
+									</div>
+								</div>
+								<div class="blog-news__item">
+									<div class="blog-news__image">
+										<img src="img/blog/blog-news-1.jpg" alt="">
+									</div>
+									<div class="blog-news__info">
+										<span class="blog-news__text">
+											Новинки от Phottix.
+										</span>
+										<span class="blog-news__date">
+											24 ноября 2021 г.
+										</span>
+									</div>
+								</div>
+								<div class="blog-news__item">
+									<div class="blog-news__image">
+										<img src="img/blog/blog-news-1.jpg" alt="">
+									</div>
+									<div class="blog-news__info">
+										<span class="blog-news__text">
+											Что может пригодится при работе с бумажным фоном?
+										</span>
+										<span class="blog-news__date">
+											15 октября 2021 г.
+										</span>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>

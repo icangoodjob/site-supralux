@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
-      depth: 350,
+      depth: 150,
       modifier: 1,
       slideShadows: false
     },
@@ -339,6 +339,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (var i = 0; i < tabItem.length; i++) {
     _loop(i);
+  }
+
+  var deliverytabContent = document.querySelectorAll("[data-tab-content-delivery]");
+  var deliverytabItem = document.querySelectorAll("[data-tab-delivery]");
+
+  var _loop2 = function _loop2(_i) {
+    deliverytabItem[_i].addEventListener("click", function () {
+      deliverytabContent.forEach(function (item) {
+        item.classList.remove("show-content");
+      });
+      deliverytabItem.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      deliverytabContent[_i].classList.add("show-content");
+
+      deliverytabItem[_i].classList.add("active");
+    });
+  };
+
+  for (var _i = 0; _i < deliverytabItem.length; _i++) {
+    _loop2(_i);
   } // Menu burger
 
 
@@ -496,3 +518,47 @@ allModals.forEach(function (item) {
     bodyUnLock();
   });
 });
+var profileBody = document.querySelector('.profile__body');
+var nullBlock = document.querySelector('.null-block');
+console.log(profileBody);
+
+if (profileBody != null) {
+  nullBlock.style.display = 'none';
+} else {
+  nullBlock.style.display = 'block';
+}
+
+; // Filter input
+
+var filter = function filter() {
+  var input = document.getElementById('filter-input'),
+      filterElements = document.querySelectorAll('#filter-list li');
+  input.addEventListener('keyup', function () {
+    var filter = input.value.toLowerCase();
+    filterElements.forEach(function (item) {
+      if (item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+  filterElements.forEach(function (item) {
+    item.addEventListener('click', function () {
+      item.innerText = this.innerText;
+      input.value = item.innerText;
+    });
+  });
+  input.addEventListener('click', function () {
+    this.nextElementSibling.classList.toggle('show');
+    this.closest('.form-box__filter').classList.toggle('active');
+  });
+  document.addEventListener('click', function (e) {
+    if (e.target !== input) {
+      input.nextElementSibling.classList.remove('show');
+      input.closest('.form-box__filter').classList.remove('active');
+    }
+  });
+};
+
+filter();

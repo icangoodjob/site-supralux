@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Избранное"
+})
+<body>
+
+	<div class="wrapper profile-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Избранное
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main profile-page">
+			<section class="profile">
+				<div class="container">
+					<div class="null-block">
+						<div class="heading-block">
+							<h2 class="heading-block__title">Избранное</h2>
+						</div>
+						<div class="null-block__box">
+							<div class="null-block__info">
+								Список избранного пуст
+							</div>
+						</div>
+					</div>
+					<div class="profile__body">
+						<aside class="profile__aside aside-profile">
+							<h2 class="aside-profile__title">Личный кабинет</h2>
+							<ul class="aside-profile__list">
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Профиль</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Заказы</a></li>
+								<li><a href="" class="aside-profile__link current _icon-arrow-right">Избранное</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Изменить пароль</a></li>
+								<li><a href="" class="aside-profile__link _icon-arrow-right">Выйти</a></li>
+							</ul>
+						</aside>
+						<div class="profile__data data-profile">
+							<div class="profile__heading-block heading-block">
+								<h2 class="heading-block__title">Избранное</h2>
+							</div>
+							<div class="data-profile__body">
+								<ul class="profile__favourites table" data-table="favourites">
+									<li class="favourites__item table__item item-table item-table__head">
+										<span class="item-table__close"></span>
+										<div class="item-table__photo">Фото товара</div>
+										<div class="item-table__name">Наименование товара</div>
+										<div class="item-table__price">Цена</div>
+										<div class="item-table__basket">Добавить в корзину</div>
+									</li>
+									<li class="favourites__item table__item item-table">
+										<span class="item-table__close">
+											<span class="close-icon _icon-close"></span>
+										</span>
+										<div class="item-table__photo">
+											<a href="#" class="item-table__picture">
+												<img src="img/favourites/1.jpg" alt="">
+											</a>
+										</div>
+										<div class="item-table__name">
+											<a href="" target="_blank" class="">Комплект постоянного освещения люминесцентный 540Вт 5500К с журавлем Fotokvant FL-13 KIT </a>
+											<p>Fotokvant FL-13 KIT - комплект постоянного света для фотосъемки на базе трех приборов постоянного света мощностью 180 Вт каждый. Общая мощность 540 Вт. Комплект включает в себя журавль, что дает больше возможностей по управлению светом.</p>
+										</div>
+										<div class="item-table__price">16 200 ₽</div>
+										<div class="item-table__basket">
+											<div class="basket-box">
+												<button class="basket-box__button basket-box__button_minus">-</button>
+												<input class="basket-box__quantity" type="text" value="1">
+												<button class="basket-box__button basket-box__button_plus">+</button>
+											</div>
+											<a href="" class="basket-box__add">В корзину</a>
+										</div>
+									</li>
+									<li class="favourites__item table__item item-table">
+										<span class="item-table__close">
+											<span class="close-icon _icon-close"></span>
+										</span>
+										<div class="item-table__photo">
+											<a href="#" class="item-table__picture">
+												<img src="img/favourites/1.jpg" alt="">
+											</a>
+										</div>
+										<div class="item-table__name">
+											<a href="" target="_blank" class="">Комплект постоянного освещения люминесцентный 540Вт 5500К с журавлем Fotokvant FL-13 KIT </a>
+											<p>Fotokvant FL-13 KIT - комплект постоянного света для фотосъемки на базе трех приборов постоянного света мощностью 180 Вт каждый. Общая мощность 540 Вт. Комплект включает в себя журавль, что дает больше возможностей по управлению светом.</p>
+											<p>Fotokvant FL-13 KIT - комплект постоянного света для фотосъемки на базе трех приборов постоянного света мощностью 180 Вт каждый. Общая мощность 540 Вт. Комплект включает в себя журавль, что дает больше возможностей по управлению светом.</p>
+										</div>
+										<div class="item-table__price">16 200 ₽</div>
+										<div class="item-table__basket">
+											<div class="basket-box">
+												<button class="basket-box__button basket-box__button_minus">-</button>
+												<input class="basket-box__quantity" type="text" value="1">
+												<button class="basket-box__button basket-box__button_plus">+</button>
+											</div>
+											<a href="" class="basket-box__add">В корзину</a>
+										</div>
+									</li>
+								</ul>
+								<div class="favourites__buttons">
+									<a href="" class="button">Продолжить покупки</a>
+									<a href="" class="button">Очистить избранное</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>

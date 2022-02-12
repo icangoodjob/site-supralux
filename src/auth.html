@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Авторизация"
+})
+<body>
+
+	<div class="wrapper auth-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Авторизация
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main auth-page">
+			<section class="auth">
+				<div class="container">
+					<div class="auth__heading-block heading-block">
+						<h1 class="heading-block__title">Вход в интернет-магазин</h1>
+					</div>
+					<form action="" class="auth__form form-auth border-block">
+						<div class="auth__body">
+							<h2 class="form-auth__title auth__title">Зарегистрированные пользователи</h2>
+							<p class="form-auth__subtitle auth__subtitle">Если у вас есть аккаунт, пожалуйста, войдите.</p>
+							<div class="auth__items">
+								<div class="auth__item">
+									<label class="form-auth__label auth__label">Email<span>*</span></label>
+									<input class="form-auth__input auth__input" type="text" placeholder="Ваш E-mail">
+								</div>
+								<div class="auth__item">
+									<label class="form-auth__label auth__label">Пароль<span>*</span></label>
+									<input class="form-auth__input auth__input" type="password" placeholder="Пароль">
+								</div>
+							</div>
+							<div class="auth__bottom">
+								<div class="auth__message">
+									<a href="#">Нет аккаунта?</a>
+								</div>
+								<div class="auth__alert">
+									<a href="#">Забыли пароль?</a>
+								</div>
+								<button class="form-auth__button auth__button" type="submit">Войти</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>

@@ -29,9 +29,9 @@ const mainSwiper = new Swiper(mainSlider, {
 	coverflowEffect: {
 		rotate: 0,
 		stretch: 0,
-		depth: 350,
+		depth: 150,
 		modifier: 1,
-		slideShadows: false
+		slideShadows: false,
 	},
 	loopAdditionalSlides: 1,
 	watchSlidesProgress: true,
@@ -309,6 +309,21 @@ for (let i = 0; i < tabItem.length; i++) {
 	});
 }
 
+let deliverytabContent = document.querySelectorAll("[data-tab-content-delivery]");
+let deliverytabItem = document.querySelectorAll("[data-tab-delivery]");
+for (let i = 0; i < deliverytabItem.length; i++) {
+	deliverytabItem[i].addEventListener("click", () => {
+		deliverytabContent.forEach((item) => {
+			item.classList.remove("show-content");
+		});
+		deliverytabItem.forEach((item) => {
+			item.classList.remove("active");
+		});
+		deliverytabContent[i].classList.add("show-content");
+		deliverytabItem[i].classList.add("active");
+	});
+}
+
 // Menu burger
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu');
@@ -453,3 +468,50 @@ allModals.forEach(function (item) {
 		bodyUnLock();
 	});
 });
+
+
+const profileBody = document.querySelector('.profile__body');
+const nullBlock = document.querySelector('.null-block');
+console.log(profileBody);
+
+if (profileBody != null){
+	nullBlock.style.display = 'none';
+} else {
+	nullBlock.style.display = 'block';
+};
+
+
+// Filter input
+let filter = function () {
+	let input = document.getElementById('filter-input'),
+	filterElements = document.querySelectorAll('#filter-list li');
+	input.addEventListener('keyup', function () {
+		let filter = input.value.toLowerCase();
+		filterElements.forEach(item => {
+			if (item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+				item.style.display = '';
+			} else {
+				item.style.display = 'none';
+			}
+		})
+	})
+	filterElements.forEach(item => {
+		item.addEventListener('click', function(){
+			item.innerText = this.innerText;
+			input.value = item.innerText;
+		})
+	})
+	input.addEventListener('click', function(){
+		this.nextElementSibling.classList.toggle('show');
+		this.closest('.form-box__filter').classList.toggle('active');
+	});
+	document.addEventListener('click', function (e) {
+		if (e.target !== input) {
+			input.nextElementSibling.classList.remove('show');
+			input.closest('.form-box__filter').classList.remove('active');
+		}
+	});
+};
+
+filter();
+

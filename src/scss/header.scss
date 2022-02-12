@@ -13,6 +13,7 @@
 		z-index: 15;
 		opacity: 0;
 		visibility: hidden;
+		transition: opacity .2s ease 0s;
 	}
 }
 .header__body {
@@ -237,7 +238,7 @@
 	line-height: 125%;
 	position: relative;
 	cursor: pointer;
-	transition: color .15s linear 0s;
+	transition: color .25s linear 0s;
 	padding: 0 0 16px;
 	letter-spacing: 0.2px;
 	&::before{
@@ -248,7 +249,7 @@
 		height: 2px;
 		background: $redColor;
 		bottom: -2px;
-		transition: width .15s linear 0s, transform .15s linear 0s;
+		transition: width .25s linear 0s, transform .25s linear 0s;
 	}
 }
 
@@ -282,15 +283,21 @@
 	line-height: math.div(20, 13) * 100%;
 	letter-spacing: 0.3px;
 	transition: background .1s ease 0s;
-	margin: 0 0 10px;
+	margin: 10px 0 10px;
 	display: none;
 }
 .category-header__button.active{
 	background: $mainColor;
 }
 
-/* Медиазапросы */
-/* ================= 1200px ==========================*/
+.auth-wrapper .category-header__button,
+.contacts-wrapper .category-header__button,
+.blog-wrapper .category-header__button,
+.make-order-wrapper .category-header__button,
+.profile-wrapper .category-header__button {
+	display: none;
+}
+
 @media screen and (max-width: $xl){
 	// HEADER
 	.category-header__link{
@@ -312,7 +319,6 @@
 	}
 }
 
-/* ================= 992px ==========================*/
 @media screen and (max-width: $lg){
 	// HEADER
 	.category-header__list{
@@ -399,10 +405,10 @@
 	.menu {
 		display: block;
 		position: fixed;
-		top: -100%;
+		top: -150%;
 		left: 0;
 		width: 100%;
-		height: auto;
+		height: max-content;
 		padding: 74px 20px 15px 20px;
 		transition: top 0.3s ease 0s;
 		background: $whiteColor;
@@ -452,7 +458,7 @@
 		margin: 0 0 0 10px;
 	}
 	.category-header{
-		padding: 10px 0 0;
+		padding: 0px 0 0;
 	}
 	.header__contacts {
 		padding: 14px 20px 13px;
@@ -516,7 +522,6 @@
 }
 
 
-/* ================= 767px ==========================*/
 @media screen and (max-width: $md){
 	// HEADER
 	.header__logo{
@@ -541,7 +546,6 @@
 	}
 }
 
-/* ================= 480px ==========================*/
 @media screen and (max-width: $xs){
 	// HEADER
 	.actions-header__item_user{

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Офомрление заказа"
+})
+<body>
+
+	<div class="wrapper profile-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Офомрление заказа
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main basket-page">
+			<section class="basket">
+				<div class="container">
+					<div class="basket__body">
+						<div class="basket__data data-basket">
+							<div class="profile__heading-block heading-block">
+								<h2 class="heading-block__title">Оформление заказа</h2>
+							</div>
+							<div class="data-basket__table">
+								<ul class="table" data-table="basket">
+									<li class="table__item item-table item-table__head">
+										<span class="item-table__close"></span>
+										<div class="item-table__photo">Фото товара</div>
+										<div class="item-table__name">Наименование товара</div>
+										<div class="item-table__price">Цена</div>
+										<div class="item-table__quantity">Количество</div>
+										<div class="item-table__result">Стоимость</div>
+									</li>
+									<li class="table__item item-table">
+										<span class="item-table__close">
+											<span class="close-icon _icon-close"></span>
+										</span>
+										<div class="item-table__photo">
+											<a href="#" class="item-table__picture">
+												<img src="img/favourites/1.jpg" alt="">
+											</a>
+										</div>
+										<div class="item-table__name">
+											<a href="" target="_blank" class="">Комплект постоянного освещения люминесцентный 540Вт 5500К с журавлем Fotokvant FL-13 KIT</a>
+										</div>
+										<div class="item-table__price">25 900 ₽</div>
+										<div class="item-table__quantity">
+											<div class="basket-box">
+												<button class="basket-box__button basket-box__button_minus">-</button>
+												<input class="basket-box__quantity" type="text" value="1">
+												<button class="basket-box__button basket-box__button_plus">+</button>
+											</div>
+										</div>
+										<div class="item-table__result">51 800 ₽</div>
+									</li>
+									<li class="table__item item-table">
+										<span class="item-table__close">
+											<span class="close-icon _icon-close"></span>
+										</span>
+										<div class="item-table__photo">
+											<a href="#" class="item-table__picture">
+												<img src="img/favourites/1.jpg" alt="">
+											</a>
+										</div>
+										<div class="item-table__name">
+											<a href="" target="_blank" class="">Комплект постоянного освещения люминесцентный 540Вт 5500К с журавлем Fotokvant FL-13 KIT</a>
+										</div>
+										<div class="item-table__price">25 900 ₽</div>
+										<div class="item-table__quantity">
+											<div class="basket-box">
+												<button class="basket-box__button basket-box__button_minus">-</button>
+												<input class="basket-box__quantity" type="text" value="1">
+												<button class="basket-box__button basket-box__button_plus">+</button>
+											</div>
+										</div>
+										<div class="item-table__result">51 800 ₽</div>
+									</li>
+								</ul>
+								<div class="data-basket__buttons">
+									<a href="" class="button button_phone">Проконсультировать</a>
+									<a href="" class="button button_delivery">Оформить доставку</a>
+								</div>
+							</div>
+							<div class="data-basket__delivery delivery-box">
+								<form action="" class="delivery-box__form form">
+									<h3 class="form__title">Доставка</h3>
+									<div class="form-box">
+										<div class="form-box__item form__item">
+											<label class="form__label">Город доставки <span>*</span></label>
+											<div class="form-box__filter _icon-arrow-right">
+												<input class="form__input" id="filter-input" type="text" placeholder="Город доставки">
+												<ul class="filter-list" id="filter-list">
+													<li>Москва</li>
+													<li>Нижний Новгород</li>
+													<li>Казань</li>
+													<li>Санкт-Петербург</li>
+													<li>Екатеринбург</li>
+													<li>Владивосток</li>
+													<li>Смоленск</li>
+													<li>Рязань</li>
+													<li>Калининград</li>
+													<li>Барнаул</li>
+												</ul>
+											</div>
+										</div>
+										<div class="form-box__item form__item">
+											<label class="form__label">Адрес доставки</label>
+											<input class="form__input" type="text" placeholder="Адрес доставки">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tabs delivery-tabs">
+								<ul class="tabs__list">
+									<li class="delivery-tabs__item active" data-tab="1">
+										<span>Самовывоз</span>
+										<p class="delivery-tabs__point">СДЭК ПВЗ </p>
+									</li>
+									<li class="delivery-tabs__item" data-tab="2">
+										<span>Экспресс доставка (24 часа)</span>
+										<p class="delivery-tabs__point">Только Москва (внутри МКАД)</p>
+									</li>
+									<li class="delivery-tabs__item" data-tab="3">
+										<span>Курьерская служба</span>
+										<p class="delivery-tabs__point">СДЭК ДО ДВЕРИ (от 2х дней)</p>
+									</li>
+								</ul>
+								<div class="delivery-tabs__content tabs__content show-content" data-tab-content="1">
+									<div class="data-tabs active">
+										<span class="circle-icon"></span>
+										<div class="data-tabs__point">СДЭК Пункты Выдачи Заказов</div>
+										<div class="data-tabs__period">(от 2х дней)</div>
+										<div class="data-tabs__price">2 850 ₽</div>
+										<div class="data-tabs__info info-box">
+											<span class="question-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg>
+											</span>
+											<div class="info-box__block">
+												<div class="info-box__title">
+													Пункты выдачи заказов СДЭК (от 2х дней)
+												</div>
+												<div class="info-box__description">
+													<p>После подтверждения заказа с менеджером вы получите трек номер для отслеживания этапов доставки. Товары весом свыше 10 кг или общей стоимостью заказа более 10000 рублей отправляются на доставку в регионы только после 100% предоплаты всего заказа.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tabs-content__map ibg">
+										<img src="img/basket/1.png" alt="">
+									</div>
+								</div>
+								<div class="delivery-tabs__content tabs__content" data-tab-content="2">
+									<div class="data-tabs active">
+										<span class="circle-icon"></span>
+										<div class="data-tabs__point">НАША ДОСТАВКА</div>
+										<div class="data-tabs__period">Экспресс-доставка (внутри МКАД)</div>
+										<div class="data-tabs__price">0 ₽</div>
+										<div class="data-tabs__info info-box">
+											<span class="question-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg>
+											</span>
+											<div class="info-box__block">
+												<div class="info-box__title">
+													Экспресс-доставка (внутри МКАД)
+												</div>
+												<div class="info-box__description">
+													<p>Возможность экспресс-доставки необходимо уточнять у менеджера при оформлении заказа. Время доставки: с 11-00 до 18-00 часов понедельник-пятница. Оплата за заказ осуществляется при получении товара, наличными или переводом. Возможна доставка за пределами МКАД - включается в стоимость заказа дополнительно + 40 руб. за 1 км за МКАД.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="delivery-tabs__content tabs__content" data-tab-content="3">
+									<div class="data-tabs active">
+										<span class="circle-icon"></span>
+										<div class="data-tabs__point">СДЭК ДО ДВЕРИ</div>
+										<div class="data-tabs__period">(от 2х дней)</div>
+										<div class="data-tabs__price">35000 ₽</div>
+										<div class="data-tabs__info info-box">
+											<span class="question-icon">
+												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg>
+											</span>
+											<div class="info-box__block">
+												<div class="info-box__title">
+													Курьерская служба СДЭК ДО ДВЕРИ (от 2х дней)
+												</div>
+												<div class="info-box__description">
+													<p>После подтверждения заказа с менеджером покупатель получает трек-номер для отслеживания этапов доставки. Товары весом свыше 10 кг или стоимостью заказа более 10000 рублей отправляются на доставку в регионы только после 100% предоплаты заказа.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="data-basket__delivery delivery-box">
+								<form action="" class="delivery-box__form form">
+									<h3 class="form__title">Контактные данные</h3>
+									<div class="delivery-box__wrapper">
+										<div class="form-box">
+											<div class="form-box__item form__item">
+												<label class="form__label">ФИО<span>*</span></label>
+												<input class="form__input" type="text" placeholder="ФИО">
+											</div>
+											<div class="form-box__item form__item">
+												<label class="form__label">Email<span>*</span></label>
+												<input class="form__input" type="email" placeholder="Ваш E-mail">
+											</div>
+											<div class="form-box__item form__item">
+												<label class="form__label">Телефон<span>*</span></label>
+												<input class="form__input" type="number" placeholder="Ваш телефон">
+											</div>
+											<div class="form-box__item form__item">
+												<label class="form__label">Доп. телефон</label>
+												<input class="form__input" type="number" placeholder="Доп. телефон">
+											</div>
+											<div class="form-box__item form__item">
+												<label class="form__label">Комментарий</label>
+												<textarea class="form__textarea" placeholder="Ваш комментарий"></textarea>
+											</div>
+										</div>
+										<div class="delivery-tabs__2">
+											<ul class="tabs__list">
+												<li class="tabs__item active" data-tab-delivery="1">
+													<div class="data-tabs">
+														<span class="circle-icon"></span>
+														<div class="data-tabs__text">Физическое лицо (покупатель)</div>
+													</div>
+												</li>
+												<li class="tabs__item" data-tab-delivery="2">
+													<div class="data-tabs">
+														<span class="circle-icon"></span>
+														<div class="data-tabs__text">Юридическое лицо (выставить счет)</div>
+													</div>
+												</li>
+											</ul>
+											<div class="tabs__content show-content" data-tab-content-delivery="1">
+												<div class="delivery-box__payment payment-box">
+													<div class="payment-box__method">
+														<div class="payment-box__label form__label">Желаемый способ оплаты<span>*</span></div>
+														<div class="data-tabs active">
+															<span class="circle-icon"></span>
+															<div class="data-tabs__text">Оплатить сейчас со скидкой</div>
+														</div>
+														<div class="data-tabs">
+															<span class="circle-icon"></span>
+															<div class="data-tabs__text">Наличными при получении</div>
+														</div>
+														<div class="data-tabs">
+															<span class="circle-icon"></span>
+															<div class="data-tabs__text">Картой при получении</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tabs__content" data-tab-content-delivery="2">
+												<div class="delivery-box__payment payment-box">
+													<div class="payment-box__method">
+														<div class="payment-box__label form__label">Желаемый способ оплаты<span>*</span></div>
+														<div class="data-tabs active">
+															<span class="circle-icon"></span>
+															<div class="data-tabs__text">Оплата по счету, юридическое лицо</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-box">
+													<div class="form-box__items">
+														<div class="form-box__item form__item">
+															<label class="form__label">Название организации<span>*</span></label>
+															<input class="form__input" type="text" placeholder="Название организации">
+														</div>
+														<div class="form-box__item form__item">
+															<label class="form__label">Юр. адрес</label>
+															<input class="form__input" type="text" placeholder="Юр. адрес">
+														</div>
+														<div class="form-box__item form__item">
+															<label class="form__label">ИНН</label>
+															<input class="form__input" type="number" placeholder="ИНН">
+														</div>
+														<div class="form-box__item form__item">
+															<label class="form__label">КПП</label>
+															<input class="form__input" type="number" placeholder="КПП">
+														</div>
+														<div class="form-box__item form__item">
+															<label class="form__label">БИК</label>
+															<input class="form__input" type="number" placeholder="БИК">
+														</div>
+														<div class="form-box__item form__item">
+															<label class="form__label">Р/С</label>
+															<input class="form__input" type="number" placeholder="Р/С">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button class="button" type="submit">Купить</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<aside class="basket__aside aside-basket">
+							<div class="aside-basket__head">Итого</div>
+							<div class="aside-basket__body">
+								<div class="basket-result">
+									<div class="basket-result__item">
+										<label class="basket-result__label">Сумма</label>
+										<div class="basket-result__value">32 101 ₽</div>
+									</div>
+									<div class="basket-result__item">
+										<label class="basket-result__label">Доставка</label>
+										<div class="basket-result__value">0 ₽</div>
+									</div>
+									<div class="basket-result__item">
+										<label class="basket-result__label">Скидка</label>
+										<div class="basket-result__value">0 ₽</div>
+									</div>
+									<div class="basket-result__item">
+										<label class="basket-result__label">Итоговая стоимость</label>
+										<div class="basket-result__value">32 101 ₽</div>
+									</div>
+								</div>
+								<div class="checkbox-item">
+									<label>
+										<input checked type="checkbox" name="category" value="checkbox" class="real-checkbox">
+										<span class="custom-checkbox"></span>
+										<span>Создать личный кабинет</span>
+									</label>
+								</div>
+								<button class="aside-basket__button button" disabled>Купить</button>
+								<div class="aside-basket__text">
+									<p>Оформляя заказ, я даю согласие на <a href="#" target="_blank">обработку персональных данных</a></p>
+								</div>
+							</div>
+						</aside>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="overlay"></div>
+	</main>
+
+
+	@@include('html/footer.html',{})
+
+
+	@@include('html/modals.html',{})
+
+</div>
+
+@@include('html/js.html',{})
+</body>
+</html>

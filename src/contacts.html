@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+	"title":"Контакты"
+})
+<body>
+
+	<div class="wrapper contacts-wrapper">
+
+		@@include('html/header.html',{})
+
+		<div class="breadcrumbs">
+			<div class="breadcrumbs__container">
+				<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+						<a href="index.html" class="breadcrumbs__link _icon-home"></a>
+					</li>
+					<li class="breadcrumbs__item">
+						Контакты
+						<span class="breadcrumbs__delete _icon-close"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<main class="main contacts-page">
+			<section class="contacts">
+				<div class="container">
+					<div class="contacts__map">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcff0b86e707e4cc34a5e975a1e8c08af80b18fe99ce877a0ca84a9416a5181&amp;source=constructor" frameborder="0"></iframe>
+					</div>
+					<div class="contacts__body">
+						<div class="contacts__inner">
+							<div class="contacts__column">
+								<div class="сontacts__heading-block heading-block">
+									<h2 class="heading-block__title">Написать cообщение</h2>
+								</div>
+								<form action="#" class="contacts__form form-contacts">
+									<div class="form-contacts__column">
+										<div class="form-contacts__item">
+											<label class="form-contacts__label form__label">Имя<span>*</span></label>
+											<input class="form-contacts__input form__input" type="text" placeholder="Введите имя">
+										</div>
+										<div class="form-contacts__item">
+											<label class="form-contacts__label form__label">Email<span>*</span></label>
+											<input class="form-contacts__input form__input" type="text" placeholder="Введите E-mail">
+										</div>
+										<div class="form-contacts__item">
+											<label class="form-contacts__label form-contacts__label_theme form__label">Тема сообщения</label>
+											<input class="form-contacts__input form__input" type="text">
+										</div>
+									</div>
+									<div class="form-contacts__column">
+										<div class="form-contacts__item">
+											<label class="form-contacts__label form__label">Текст сообщения<span>*</span></label>
+											<textarea class="form-contacts__textarea form__textarea" placeholder="Текст сообщения"></textarea>
+										</div>
+										<button class="form-contacts__button form__button" type="submit">Отправить</button>
+									</div>
+								</form>
+							</div>
+							<div class="contacts__column">
+								<div class="сontacts__heading-block heading-block">
+									<h2 class="heading-block__title">Контакты</h2>
+								</div>
+								<div class="contacts__box contacts-box">
+									<div class="contacts-box__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"/></svg>
+									</div>
+									<div class="contacts-box__text">Россия, Москва, Краснобогатырская улица, 2с1</div>
+								</div>
+								<div class="contacts__box contacts-box">
+									<div class="contacts-box__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M18.92 351.2l108.5-46.52c12.78-5.531 27.77-1.801 36.45 8.98l44.09 53.82c69.25-34 125.5-90.31 159.5-159.5l-53.81-44.04c-10.75-8.781-14.41-23.69-8.974-36.47l46.51-108.5c6.094-13.91 21.1-21.52 35.79-18.11l100.8 23.25c14.25 3.25 24.22 15.8 24.22 30.46c0 252.3-205.2 457.5-457.5 457.5c-14.67 0-27.18-9.968-30.45-24.22l-23.25-100.8C-2.571 372.4 5.018 357.2 18.92 351.2z"/></svg>
+									</div>
+									<div class="contacts-box__text">+7 988 250 04 08</div>
+								</div>
+								<div class="contacts__box contacts-box">
+									<div class="contacts-box__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 352c-16.53 0-33.06-5.422-47.16-16.41L0 173.2V400C0 426.5 21.49 448 48 448h416c26.51 0 48-21.49 48-48V173.2l-208.8 162.5C289.1 346.6 272.5 352 256 352zM16.29 145.3l212.2 165.1c16.19 12.6 38.87 12.6 55.06 0l212.2-165.1C505.1 137.3 512 125 512 112C512 85.49 490.5 64 464 64h-416C21.49 64 0 85.49 0 112C0 125 6.01 137.3 16.29 145.3z"/></svg>
+									</div>
+									<div class="contacts-box__text">support@supralux.ru</div>
+								</div>
+								<div class="contacts__box contacts-box">
+									<div class="contacts-box__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"/></svg>
+									</div>
+									<div class="contacts-box__text">Пн-Пт: с 9:00 до 18:00</div>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__inner">
+							<div class="contacts__column">
+								<div class="сontacts__heading-block heading-block">
+									<h2 class="heading-block__title">Информация</h2>
+								</div>
+								<div class="contacts__info info-contacts">
+									<p>Обработка заказов осуществляется во время работы отдела продаж магазина (центральный офис, г. Москва):</p>
+									<ul class="info-contacts__list">
+										<li>понедельник–пятница: с 9:00 до 18:00</li>
+										<li>суббота–воскресенье: выходные дни</li>
+									</ul>
+									<p>Время работы службы экспресс-доставки:</p>
+									<ul class="info-contacts__list">
+										<li>понедельник – воскресенье: с 10:30 до 19:00</li>
+									</ul>
+									<p>Вы можете зарезервировть товар на сайте Trade-Light.ru через корзину круглосуточно. Все подтвержденные менеджером резервы действительны в течение з-х рабочих дней.</p>
+									<p><span>Внимание!</span> Заказы, оформленные клиентами через сайт, обрабатываются магазином в приоритетном порядке.</p>
+									<div class="info-contacts__item">
+										<span class="info-contacts__label">E-mail:</span>
+										<a class="info-contacts__link" href="mailto:support@supralux.ru">support@supralux.ru</a>
+									</div>
+									<div class="info-contacts__item">
+										<span class="info-contacts__label">Телефон:</span>
+										<a class="info-contacts__link" href="tel:+79882500408">+7 988 250 04 08</a>
+									</div>
+									<div class="info-contacts__item">
+										<span class="info-contacts__label">Группа в ВК:</span>
+										<a class="info-contacts__link" href="vk.com/club30017620">vk.com/club30017620</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="overlay"></div>
+		</main>
+
+
+		@@include('html/footer.html',{})
+
+
+		@@include('html/modals.html',{})
+
+	</div>
+
+	@@include('html/js.html',{})
+</body>
+</html>
