@@ -28,7 +28,7 @@ const mainSwiper = new Swiper(mainSlider, {
 	effect: "coverflow",
 	coverflowEffect: {
 		rotate: 0,
-		stretch: 0,
+		stretch: 1,
 		depth: 150,
 		modifier: 1,
 		slideShadows: false,
@@ -44,7 +44,7 @@ const mainSwiper = new Swiper(mainSlider, {
 	grabCursor: false,
 	slideClass: "slider-main__item",
 	wrapperClass: "slider-main__wrapper",
-	speed: 1000,
+	speed: 1100,
 	pagination: {
 		el: ".main-slider__pagination",
 		clickable: true,

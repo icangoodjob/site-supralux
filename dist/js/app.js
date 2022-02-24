@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     effect: "coverflow",
     coverflowEffect: {
       rotate: 0,
-      stretch: 0,
+      stretch: 1,
       depth: 150,
       modifier: 1,
       slideShadows: false
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     grabCursor: false,
     slideClass: "slider-main__item",
     wrapperClass: "slider-main__wrapper",
-    speed: 1000,
+    speed: 1100,
     pagination: {
       el: ".main-slider__pagination",
       clickable: true
